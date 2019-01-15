@@ -10,6 +10,7 @@ class SumOfMultiples
       @number.each do |factor|
         if number % factor == 0
           sum += number
+          break
         end
       end
       number += 1

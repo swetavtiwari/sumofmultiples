@@ -16,4 +16,9 @@ describe 'SumOfMultiples' do
     sumofmultiples = SumOfMultiples.new(3)
     expect(sumofmultiples.to(7)).to eq 9
   end
+  it 'factors are not relatively prime' do
+    sumofmultiples = SumOfMultiples.new(4, 6)
+    expect(sumofmultiples.to(15)).to eq 30
+  end
+
 end
