@@ -8,6 +8,10 @@ class SumOfMultiples
     number = @number[0]
     while number < limit
       @number.each do |factor|
+        if factor == 0
+          sum = 0
+          break
+        end
         if number % factor == 0
           sum += number
           break

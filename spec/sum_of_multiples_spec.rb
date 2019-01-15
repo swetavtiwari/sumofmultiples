@@ -20,5 +20,18 @@ describe 'SumOfMultiples' do
     sumofmultiples = SumOfMultiples.new(4, 6)
     expect(sumofmultiples.to(15)).to eq 30
   end
+  it 'one factor is the multiple of other' do
+    sumofmultiples = SumOfMultiples.new(5, 25)
+    expect(sumofmultiples.to(51)).to eq 275
+  end
+  it 'some factors are relatively prime and some are not' do
+    sumofmultiples = SumOfMultiples.new(5, 6, 8)
+    expect(sumofmultiples.to(150)).to eq 4419
+  end
+  it 'only multiple of zero is zero' do
+    sumofmultiples = SumOfMultiples.new(0)
+    expect(sumofmultiples.to(1)).to eq 0
+  end
+
 
 end
