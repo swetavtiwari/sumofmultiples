@@ -6,9 +6,9 @@ class SumOfMultiples
 
   def to(limit)
     sum = 0
-    number = 2
+    number = @number1
     while number < limit
-      if number % @number1 == 0
+      if number % @number1 == 0 || number % @number2 == 0
         sum += number
       end
       number += 1
