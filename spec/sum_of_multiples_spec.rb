@@ -12,5 +12,8 @@ describe 'SumOfMultiples' do
     sumofmultiples = SumOfMultiples.new(3, 5)
     expect(sumofmultiples.to(10)).to eq 23
   end
-
+  it 'varying number of parameters' do
+    sumofmultiples = SumOfMultiples.new(3)
+    expect(sumofmultiples.to(7)).to eq 9
+  end
 end
