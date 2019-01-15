@@ -8,5 +8,4 @@ describe 'SumOfMultiples' do
     sumofmultiples = SumOfMultiples.new(3, 5)
     expect(sumofmultiples.to(4)).to eq 3
   end
-
 end

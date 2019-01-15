@@ -5,9 +5,14 @@ class SumOfMultiples
   end
 
   def to(limit)
-    if limit == 4
-      return 3
+    sum = 0
+    number = 2
+    while number < limit
+      if number % @number1 == 0
+        sum += number
+      end
+      number += 1
     end
-    0
+    sum
   end
 end
